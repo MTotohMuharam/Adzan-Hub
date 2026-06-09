@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Azan TV Digital Masjid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon-m.png">
+</head>
+<body>
+
+    <body>
+    <div id="layar-countdown-fullscreen" class="hidden"></div>
+    <div class="display-wrapper">
+        
+        <header class="top-header">
+            <div class="header-box clock-box">
+                <span id="big-clock">07:48</span>
+            </div>
+            
+            <div class="header-box center-title">
+                <h2>Mushola Al-Ikhlas</h2>
+                <p>Kampus ITSB - Cikarang Pusat</p>
+            </div>
+            
+            <div class="header-box date-box">
+                <span class="hijri-date">14 Shafar 1445 H</span>
+                <span class="masehi-date">Kamis, 31 Agustus 2023</span>
+            </div>
+        </header>
+
+        <main class="middle-content">
+    
+            <div class="left-info-panel">
+                <div class="info-box-item" id="box-kajian">
+                    <h4>📅 JADWAL KAJIAN</h4>
+                    <p id="teks-info-kajian">Belum ada jadwal kajian</p>
+                </div>
+                <div class="info-box-item" id="box-khotib">
+                    <h4>🕌 KHOTIB JUMAT INI</h4>
+                    <p id="teks-info-khotib">Belum ada data khotib</p>
+                </div>
+            </div>
+
+            <div class="right-controls">
+                <div class="status-badge node-badge">
+                    <span class="icon">🔊</span> Mode Murottal
+                </div>
+                <a href="admin.html" class="settings-trigger" style="text-decoration: none;">⚙️</a>
+            </div>
+
+        </main>
+
+        <footer class="bottom-footer">
+            <div class="prayer-timeline">
+                <div class="prayer-card" id="imsak">
+                    <span class="label">Imsak</span>
+                    <span class="time">04:16</span>
+                </div>
+                <div class="prayer-card" id="shubuh">
+                    <span class="label">Shubuh</span>
+                    <span class="time">04:26</span>
+                </div>
+                <div class="prayer-card" id="syuruq">
+                    <span class="label">Syuruq</span>
+                    <span class="time">05:50</span>
+                </div>
+                
+                <div class="prayer-card active" id="dhuhur">
+                    <span class="label">Dhuhur</span>
+                    <span class="time">12:03</span>
+                    <span class="sub-timer">-04:44:53</span>
+                </div>
+                
+                <div class="prayer-card" id="ashar">
+                    <span class="label">Ashar</span>
+                    <span class="time">15:03</span>
+                </div>
+                <div class="prayer-card" id="maghrib">
+                    <span class="label">Maghrib</span>
+                    <span class="time">17:58</span>
+                </div>
+                <div class="prayer-card" id="isya">
+                    <span class="label">Isya'</span>
+                    <span class="time">18:59</span>
+                </div>
+            </div>
+        </footer>
+        <div class="running-text-container">
+            <marquee behavior="scroll" direction="left" id="running-text">
+                Selamat Datang di Mushola Al-Ikhlas - Kampus Institut Teknologi Sains Bandung - Pada Hari Jum'at, 12 Juni 2026 akan dilaksanakan Sholar Jumat di Mushola. Terima kasih.
+            </marquee>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <audio id="audio-azan" src="bel-azan.mp3" preload="auto"></audio>
+    <audio id="audio-iqomah" src="alarm-iqomah.mp3" preload="auto"></audio>
+
+</body>
+</html>
